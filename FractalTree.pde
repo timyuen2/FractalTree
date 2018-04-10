@@ -9,7 +9,7 @@ public void setup()
 public void draw() 
 {   
   background(0);   
-  stroke(0,255,0);   
+  stroke(0,255,100);   
   line(320,480,320,380);  
   drawBranches(320, 380, 100, 3*Math.PI/2);
   //drawBranches(??,??,??,??);  //will add later 
@@ -27,8 +27,8 @@ public void drawBranches(int x,int y, double branchLength, double angle)
   line(x, y, endX2, endY2);
   if(branchLength <= smallestBranch)
   {
-    fill(255, 0, 0);
-    ellipse(x, y, 10, 10);
+    fill(255, 255, 0);
+    ellipse(x, y, 40, 80);
   }
   else//if(branchLength > smallestBranch)
   {
